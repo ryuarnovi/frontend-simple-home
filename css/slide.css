@@ -1,0 +1,215 @@
+html,
+body {
+    font: 16px "Open Sans", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Testimonial */
+.testimonial {
+    padding: 3rem 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('../Images/Background-3.jpeg');
+}
+
+.overlay-bg3{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: (0,0,0,0.5);
+}
+
+
+.testimonial__title {
+    margin: 0 1.375rem 1.25rem 0;
+    font-weight: normal;
+    font-size: 1.375rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.testimonial__quote {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    border: none;
+}
+
+.testimonial__text {
+    display: flex;
+    align-items: center;
+    min-height: 3.375rem;
+    padding: 3.125rem 2.25rem 3.75rem 1.375rem; /* Adjusted padding values */
+    max-width: 40%;
+    margin-bottom: 1.875rem;
+    font-size: 1.375rem;
+    line-height: 1.55;
+    color: #000;
+    background: #ffffff70;
+    border-radius: 1.875rem 0; /* Adjusted border-radius values */
+    box-shadow: 0 0.625rem 1.375rem rgba(0, 0, 0, 0.2);
+}
+
+.testimonial__meta {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__img {
+    min-width: 7.55rem;
+    width: 8.55rem;
+    height: 8.55rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    background: white;
+    margin-left: 300px;
+    border: solid 0.125rem white;
+    border-width: 0.1875rem;
+    box-shadow: 0 0.625rem 1.375rem rgba(0, 0, 0, 0.2);
+}
+
+.testimonial__author {
+    font-size: 1.375rem;
+    line-height: 1.1;
+    color: white;
+}
+
+.testimonial__position {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Your existing CSS styles */
+
+.testimonial__slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.title{
+    margin-left:450px ;
+}
+.testimonial__item {
+  flex: 0 0 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.active {
+  opacity: 1;
+}
+
+.testimonial__dots {
+    margin-left: 630px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  background-color: #2b2b2b;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover{
+  background-color: #ffff;
+}
+
+.active {
+  background-color: #00000000;
+}
+
+.background-slide{
+  background-color: #00000028;
+}
+
+/* Aturan CSS yang ada sebelumnya */
+
+/* Responsivitas untuk layar dengan lebar maksimal 767px (HP) */
+@media screen and (max-width: 767px) {
+  .testimonial__quote {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  .testimonial__text {
+    max-width: 100%;
+    border-radius: 1.875rem;
+    box-shadow: 0 0.625rem 1.375rem rgba(0, 0, 0, 0.2);
+  }
+
+  .testimonial__img {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial__dots {
+    margin: 1rem 0;
+  }
+}
+
+
+.project-section {
+  background-color: #051104;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.project-slider {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-slide {
+  flex: 0 0 auto;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+.project-slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Additional styles to hide scrollbar */
+.project-slider {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+.project-slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
+
+/* CARD BOTT */
+
+
+
+
